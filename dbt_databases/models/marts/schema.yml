@@ -1,0 +1,43 @@
+
+version: 2
+
+models:
+  - name: dividend_growth_inception
+    description: "Calculates growth percentage and delta since the first dividend payment"
+    columns:
+      - name: ticker
+        data_tests:
+          - not_null
+      - name: ex_dividend_date
+        data_tests:
+          - not_null
+
+  - name: dividend_growth_rate
+    description: "Yearly dividend growth rate"
+    columns:
+      - name: ticker
+        data_tests:
+          - not_null
+      - name: year
+        data_tests:
+          - not_null
+      - name: yearly_growth_rate
+        data_tests:
+          - dbt_utils.accepted_range:
+              min_value: -1
+              max_value: 10
+
+  - name: mart_stock_snapshot
+    description: "Snapshot created using weekly data"
+    columns:
+      - name: ticker
+        data_tests:
+          - not_null
+      - name: date
+        data_tests:
+          - not_null
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - ticker
+            - date

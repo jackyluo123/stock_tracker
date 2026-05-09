@@ -1,0 +1,12 @@
+dbt_databases:
+  outputs:
+    dev:
+      dbname: market_data
+      host: postgres_market_data
+      pass: market_data
+      port: 5432
+      schema: public
+      threads: 1
+      type: postgres
+      user: market_data
+  target: dev

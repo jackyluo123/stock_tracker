@@ -1,0 +1,63 @@
+
+version: 2
+
+models:
+  - name: int_moving_averages
+    description: "Calculated moving averages for each ticker using weekly data"
+    columns:
+      - name: ticker
+        data_tests:
+          - not_null
+      - name: date
+        data_tests:
+          - not_null
+
+  - name: int_ohlc
+    description: "Calculated candle wick data using weekly data"
+    columns:
+      - name: ticker
+        data_tests:
+          - not_null
+      - name: date
+        data_tests:
+          - not_null
+
+  - name: int_returns
+    description: "Calculated returns for each ticker using weekly data"
+    columns:
+      - name: ticker
+        data_tests:
+          - not_null
+      - name: date
+        data_tests:
+          - not_null
+
+  - name: int_volatility
+    description: "Calculated volatility for each ticker using weekly data"
+    columns:
+      - name: ticker
+        data_tests:
+          - not_null
+      - name: date
+        data_tests:
+          - not_null
+
+  - name: int_volume_analytics
+    description: "Calculated volume changes and spikes for each ticker using weekly data"
+    columns:
+      - name: ticker
+        data_tests:
+          - not_null
+      - name: date
+        data_tests:
+          - not_null
+
+  - name: int_stock_features
+    description: "Combines all intermediate models together"
+    columns:
+      - name: ticker
+        data_tests:
+          - not_null
+      - name: date
+        data_tests:
+          - not_null

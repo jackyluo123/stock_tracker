@@ -1,0 +1,12 @@
+{"timestamp":"2026-05-07T03:48:33.225975Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-05-07T03:48:33.226577Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/market_data_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-05-07T03:48:33.235287Z","level":"warning","event":"The `airflow.operators.trigger_dagrun.TriggerDagRunOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.trigger_dagrun.TriggerDagRunOperator'`.","category":"UserWarning","filename":"/opt/airflow/dags/market_data_pipeline.py","lineno":5,"logger":"py.warnings"}
+{"timestamp":"2026-05-07T03:48:33.254013Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-05-07T03:48:33.254123Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-05-07T03:48:33.254290Z","level":"info","event":"Current task name:trigger_tests","logger":"task.stdout"}
+{"timestamp":"2026-05-07T03:48:33.254362Z","level":"info","event":"Dag name:market_data_transform","logger":"task.stdout"}
+{"timestamp":"2026-05-07T03:48:32.610990Z","level":"info","event":"Triggering Dag Run.","trigger_dag_id":"market_data_test","logger":"task","filename":"task_runner.py","lineno":1422}
+{"timestamp":"2026-05-07T03:48:32.625274Z","level":"info","event":"Dag Run triggered successfully.","trigger_dag_id":"market_data_test","logger":"task","filename":"task_runner.py","lineno":1457}
+{"timestamp":"2026-05-07T03:48:30.782804Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-05-07T03:48:30.782949Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-05-07T03:48:30.783048Z","level":"info","event":"Task operator:<Task(TriggerDagRunOperator): trigger_tests>","logger":"task.stdout"}

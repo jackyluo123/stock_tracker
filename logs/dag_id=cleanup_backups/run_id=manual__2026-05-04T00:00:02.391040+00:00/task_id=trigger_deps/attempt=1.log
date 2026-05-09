@@ -1,0 +1,12 @@
+{"timestamp":"2026-05-04T00:00:04.558746Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-05-04T00:00:04.559214Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/market_data_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-05-04T00:00:04.566090Z","level":"warning","event":"The `airflow.operators.trigger_dagrun.TriggerDagRunOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.trigger_dagrun.TriggerDagRunOperator'`.","category":"UserWarning","filename":"/opt/airflow/dags/market_data_pipeline.py","lineno":5,"logger":"py.warnings"}
+{"timestamp":"2026-05-04T00:00:04.581882Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-05-04T00:00:04.581955Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-05-04T00:00:04.582080Z","level":"info","event":"Current task name:trigger_deps","logger":"task.stdout"}
+{"timestamp":"2026-05-04T00:00:04.582116Z","level":"info","event":"Dag name:cleanup_backups","logger":"task.stdout"}
+{"timestamp":"2026-05-04T00:00:04.666663Z","level":"info","event":"Triggering Dag Run.","trigger_dag_id":"download_deps","logger":"task","filename":"task_runner.py","lineno":1422}
+{"timestamp":"2026-05-04T00:00:04.679207Z","level":"info","event":"Dag Run triggered successfully.","trigger_dag_id":"download_deps","logger":"task","filename":"task_runner.py","lineno":1457}
+{"timestamp":"2026-05-04T00:00:04.709459Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-05-04T00:00:04.709543Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-05-04T00:00:04.709686Z","level":"info","event":"Task operator:<Task(TriggerDagRunOperator): trigger_deps>","logger":"task.stdout"}

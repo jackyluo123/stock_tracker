@@ -1,0 +1,12 @@
+{"timestamp":"2026-05-07T04:15:46.395607Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-05-07T04:15:46.396243Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/market_data_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-05-07T04:15:46.406212Z","level":"warning","event":"The `airflow.operators.trigger_dagrun.TriggerDagRunOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.trigger_dagrun.TriggerDagRunOperator'`.","category":"UserWarning","filename":"/opt/airflow/dags/market_data_pipeline.py","lineno":5,"logger":"py.warnings"}
+{"timestamp":"2026-05-07T04:15:46.425717Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-05-07T04:15:46.425871Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-05-07T04:15:46.426016Z","level":"info","event":"Current task name:trigger_cleanup","logger":"task.stdout"}
+{"timestamp":"2026-05-07T04:15:46.426094Z","level":"info","event":"Dag name:market_data_ingestion","logger":"task.stdout"}
+{"timestamp":"2026-05-07T04:15:46.520803Z","level":"info","event":"Triggering Dag Run.","trigger_dag_id":"cleanup_backups","logger":"task","filename":"task_runner.py","lineno":1422}
+{"timestamp":"2026-05-07T04:15:46.537413Z","level":"info","event":"Dag Run triggered successfully.","trigger_dag_id":"cleanup_backups","logger":"task","filename":"task_runner.py","lineno":1457}
+{"timestamp":"2026-05-07T04:15:46.573775Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-05-07T04:15:46.573888Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-05-07T04:15:46.574020Z","level":"info","event":"Task operator:<Task(TriggerDagRunOperator): trigger_cleanup>","logger":"task.stdout"}

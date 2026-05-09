@@ -1,0 +1,6 @@
+sources:
+  - name: market_data
+    schema: public
+    tables:
+      - name: dividend
+      - name: time_series_weekly

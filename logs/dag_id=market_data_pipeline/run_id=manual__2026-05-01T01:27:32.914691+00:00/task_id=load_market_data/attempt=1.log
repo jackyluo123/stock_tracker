@@ -1,0 +1,4 @@
+{"timestamp":"2026-05-01T01:27:36.441298Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-05-01T01:27:36.441861Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/market_data_ingest_daily.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-05-01T01:27:36.442050Z","level":"error","event":"Dag not found during start up","dag_id":"market_data_pipeline","bundle":"BundleInfo(name='dags-folder', version=None)","path":"market_data_ingest_daily.py","logger":"task","filename":"task_runner.py","lineno":788}
+{"timestamp":"2026-05-01T01:27:36.442273Z","level":"warning","event":"Rescheduling task during startup, marking task as UP_FOR_RESCHEDULE","logger":"task","filename":"task_runner.py","lineno":1862}
