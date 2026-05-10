@@ -14,11 +14,13 @@ WITH yearly_payout AS (
    GROUP BY ticker, EXTRACT(YEAR FROM ex_dividend_date)
 )
 SELECT
+
    currYear.ticker,
    currYear.year,
    currYear.num_payouts AS payouts_this_year,
    pastYear.num_payouts AS payouts_last_year,
-   (currYear.payout - pastYear.payout) / NULLIF(pastYear.payout, 0) AS growth_rate
+   (currYear.payout - pastYear.payout) / NULLIF(pastYear.payout, 0) AS yearly_growth_rate
+
 FROM yearly_payout AS currYear
 LEFT JOIN yearly_payout AS pastYear
    ON currYear.year = pastYear.year + 1 AND currYear.ticker = pastYear.ticker

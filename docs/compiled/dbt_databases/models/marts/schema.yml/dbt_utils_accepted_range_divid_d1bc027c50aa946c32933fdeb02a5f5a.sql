@@ -12,9 +12,9 @@ validation_errors as (
     -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
     1 = 2
     -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
-    or not growth_rate >= -1
+    or not yearly_growth_rate >= -1
     -- records with a value <= max_value are permitted. The `not` flips this to find records that don't meet the rule.
-    or not growth_rate <= 10
+    or not yearly_growth_rate <= 10
 )
 
 select *
