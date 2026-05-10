@@ -1,0 +1,12 @@
+{"timestamp":"2026-05-10T00:09:14.629107Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-05-10T00:09:14.629714Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/market_data_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-05-10T00:09:14.637476Z","level":"warning","event":"The `airflow.operators.trigger_dagrun.TriggerDagRunOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.trigger_dagrun.TriggerDagRunOperator'`.","category":"UserWarning","filename":"/opt/airflow/dags/market_data_pipeline.py","lineno":5,"logger":"py.warnings"}
+{"timestamp":"2026-05-10T00:09:14.653350Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-05-10T00:09:14.653480Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-05-10T00:09:14.653537Z","level":"info","event":"Current task name:trigger_transforms","logger":"task.stdout"}
+{"timestamp":"2026-05-10T00:09:14.653576Z","level":"info","event":"Dag name:download_deps","logger":"task.stdout"}
+{"timestamp":"2026-05-10T00:09:14.736853Z","level":"info","event":"Triggering Dag Run.","trigger_dag_id":"market_data_transform","logger":"task","filename":"task_runner.py","lineno":1422}
+{"timestamp":"2026-05-10T00:09:14.752375Z","level":"info","event":"Dag Run triggered successfully.","trigger_dag_id":"market_data_transform","logger":"task","filename":"task_runner.py","lineno":1457}
+{"timestamp":"2026-05-10T00:09:14.783960Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-05-10T00:09:14.784060Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-05-10T00:09:14.784198Z","level":"info","event":"Task operator:<Task(TriggerDagRunOperator): trigger_transforms>","logger":"task.stdout"}
